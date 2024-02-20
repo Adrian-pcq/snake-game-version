@@ -20,3 +20,7 @@ class Obstacle(Turtle):
         for odd in self.all:
             odd.goto(1000, 1000)
         self.all.clear()
+
+    def distance(self, food):
+        for odd in self.all:
+            return odd.distance(food)<20
